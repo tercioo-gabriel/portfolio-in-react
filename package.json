@@ -19,9 +19,11 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "css-loader": "^6.8.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
+    "style-loader": "^3.3.3",
     "tailwindcss": "latest",
     "typescript": "latest"
   }
