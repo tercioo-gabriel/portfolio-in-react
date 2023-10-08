@@ -1,6 +1,6 @@
 import NavBar from '@/components/NavBar/Desktop/NavBar';
-import NavBarMobile from '@/components/NavBar/Mobile/NavBarMob';
-import NavigationMobile from '@/components/NavBar/Mobile/NavigationBarMob';
+import NavBarMobile from '@/components/NavBar/Mobile/NavBarMobile';
+import NavigationMobile from '@/components/NavBar/Mobile/NavigationMobile';
 import ToggleButton from '@/components/Toggle/ToggleButton';
 
 import Image from 'next/image';

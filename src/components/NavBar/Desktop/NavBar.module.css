@@ -21,4 +21,4 @@
 }
 .a:hover{ color: #ed3654; }
 
-.a:hover::after{ width: 98%; }
+.a:hover::after{ width: 95%; }
