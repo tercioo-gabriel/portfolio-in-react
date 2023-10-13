@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { BiMenuAltLeft } from 'react-icons/bi';
+import Image from 'next/image';
 
 const NavBarMobile = (props: any) =>{
 
@@ -18,7 +18,7 @@ const NavBarMobile = (props: any) =>{
     };
   }, []);
 
-  const tamanhoDesejado = 835;
+  const tamanhoDesejado = 830;
 
   const handleMenuClick = () => {
     if (props.onMenuClick) {
@@ -27,10 +27,14 @@ const NavBarMobile = (props: any) =>{
   };
 
   return (
-    <div className='fixed z-10 mt-2.5 ml-1 text-slate-100 dark:text-slate-800 cursor-pointer'>
-      {largura < tamanhoDesejado && <BiMenuAltLeft 
-        size={56}
-        onClick={handleMenuClick}
+    <div className='fixed z-10 top-1.5 cursor-pointer'>
+      {largura < tamanhoDesejado && <Image 
+          className='fixed left-0 top-3 transition-all hover:scale-105 sm:w-16 sm:h-16'
+          src="/assets/images/dev_menu.svg"
+          alt="dev menu" 
+          width={54}
+          height={54}
+          onClick={handleMenuClick}
       />}
     </div>
   )

@@ -1,11 +1,10 @@
 "use client"
-import classes from "./NavigationMobile.module.css"
 import { IoMdClose } from 'react-icons/io'
 import { useState } from 'react';
 import NavBarMobile from "./NavBarMobile";
 
 const NavigationMobile = ()=> {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseClick = () => {
     setIsOpen(false);
@@ -17,39 +16,42 @@ const NavigationMobile = ()=> {
 
   return(
     <>
-    <NavBarMobile onMenuClick={handleMenuClick} />
+    <NavBarMobile className="mt-0" onMenuClick={handleMenuClick} />
     {isOpen && (
-      <div className="fixed z-30 w-9/12 max-w-md h-full bg-slate-100 dark:bg-slate-900 flex flex-col">
+      <div className="fixed flex flex-col top-0 z-30 w-9/12 max-w-md h-full bg-zinc-50 dark:bg-zinc-700 duration-500">
 
         <IoMdClose 
-          className="cursor-pointer text-slate-800 dark:text-slate-100" 
+          className="cursor-pointer" 
           size={56}
           onClick={handleCloseClick} 
         />
 
-        <ul className="text-center text-slate-800 dark:text-slate-100 font-light">
+        <ul className="text-center font-light overflow-hidden">
 
           <li className="mt-9">
-            <a className={classes.a} href="">Início</a>
+            <a className='mob' href="">Início</a>
           </li>
 
           <li className="my-3">
-            <a className={classes.a} href="">Sobre Mim</a>
+            <a className='mob' href="">Sobre Mim</a>
           </li>
 
           <li className="my-3">
-            <a className={classes.a} href="">Habilidades</a>
+            <a className='mob' href="">Habilidades</a>
           </li>
 
           <li className="my-3">
-            <a className={classes.a} href="">Projetos</a>
+            <a className='mob' href="">Projetos</a>
           </li>
             
           <li className="mb-9">
-            <a className={classes.a} href="">Contato</a>
+            <a className='mob' href="">Contato</a>
           </li>
         </ul>
-        <span className="mt-auto mb-2 text-center">Tércio Gabriel de Jesus - 2023</span>
+
+        <span className="mt-auto mb-2 text-center text-sm text-zinc-800/80 dark:text-zinc-100/80">Tércio Gabriel de Jesus - 2023
+        </span>
+
       </div>
       )}
     </>

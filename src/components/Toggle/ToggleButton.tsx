@@ -31,21 +31,21 @@ const ToggleButton = () =>{
   },[theme]);
 
   return(
-    <div className="fixed z-10 top-5 right-3 dark:bg-slate-800/95 bg-slate-50 rounded">
+    <div className="fixed flex flex-col z-10 top-3 right-3 bg-zinc-700 dark:bg-zinc-200 rounded sm:top-5">
       {
         options?.map(opt=>(
           <button
            key={opt.text}
            onClick={()=> setTheme(opt.text)}
-           className={`w-8 h-8 leading-9 text-2xl m-1 ${theme === opt.text ? 'text-redPink' : 'text-slate-800'}`}>
+           className={`mx-0.5 my-1 first:border-b border-zinc-300 dark:border-zinc-600 first:pb-1 sm:m-1 ${theme === opt.text ? 'text-redPink' : 'text-zinc-100'}`}>
           {opt.icon === 'sun' ? 
           <BiSolidSun 
-            className="ml-1" 
             name={opt.icon} 
-            style={{ color: theme !== opt.text ? 'white' : '' }} /> : 
+            style={{ color: theme !== opt.text ? 'dimgray' : '' }}
+            size={28} /> : 
           <BiSolidMoon 
-            className="ml-1" 
-            name={opt.icon} />}    
+            name={opt.icon}
+            size={28} />}    
           </button>
         ))
       }
