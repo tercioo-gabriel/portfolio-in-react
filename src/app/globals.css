@@ -19,7 +19,23 @@
 
 body {
   @apply bg-zinc-100 dark:bg-zinc-800
-  text-zinc-800 dark:text-zinc-100 duration-500
+  text-zinc-700 dark:text-zinc-200 duration-500
+}
+
+@layer base{
+  .layoutCenter{
+    @apply max-w-screen-2xl mx-auto px-3 xs:px-8 sm:px-20 text-center text-sm sm:text-base
+  }
+  @layer base{
+    .fontSection{
+      @apply text-2xl sm:text-3xl font-semibold
+    }
+  }
+  @layer base{
+    .imgTecs{
+      @apply border-zinc-600 hover:bg-zinc-100 hover:dark:bg-zinc-800 rounded-sm shadow-tecs sm:saturate-0 hover:saturate-100 hover:scale-105 transition-all p-4 md:p-3.5 duration-300
+    }
+  }
 }
 
 @layer components {
@@ -64,4 +80,18 @@ body {
   }
 
   .sun{ margin-right: 6px; }
+
+  @keyframes translate-y {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(260%);
+    }
+  }
+  .translate-y {
+    animation-name: translate-y;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
 }
