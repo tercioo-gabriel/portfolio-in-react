@@ -23,9 +23,9 @@ const Title = () => {
       </div>
       
       <div>
-        <div className="-mr-14 -mt-16 hidden lg:block">
+        <div className="-mr-8 xl:-mr-0 -mt-6 hidden lg:block">
             <Image
-            className='scale-90 lg:scale-100 xl:scale-110 2xl:scale-125 drop-shadow-normalImg dark:drop-shadow-redPinkImg'
+            className='scale-75 xl:scale-90 2xl:scale-100 drop-shadow-normalImg dark:drop-shadow-redPinkImg'
             src="/assets/images/dev_computer.svg"
             alt="dev"
             width={512}

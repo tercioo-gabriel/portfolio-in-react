@@ -33,7 +33,7 @@ const NavigationMobile = ()=> {
           </li>
 
           <li className="my-3">
-            <a className='mob' href="">Sobre Mim</a>
+            <a className='mob' href="">Quem Sou</a>
           </li>
 
           <li className="my-3">

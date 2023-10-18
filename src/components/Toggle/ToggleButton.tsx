@@ -37,7 +37,7 @@ const ToggleButton = () =>{
           <button
            key={opt.text}
            onClick={()=> setTheme(opt.text)}
-           className={`mx-0.5 my-1 first:border-b border-zinc-300 dark:border-zinc-600 first:pb-1 sm:m-1 ${theme === opt.text ? 'text-redPink' : 'text-zinc-100'}`}>
+           className={`mx-0.5 my-1 sm:m-1 ${theme === opt.text ? 'text-redPink' : 'text-zinc-100'}`}>
           {opt.icon === 'sun' ? 
           <BiSolidSun 
             name={opt.icon} 

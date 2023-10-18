@@ -34,23 +34,23 @@ const NavBar = () => {
           <nav className="backdrop-blur-sm bg-zinc-100/60 dark:bg-zinc-900/50 rounded-xl h-16 ">
             <ul className="flex justify-around text-zinc-700 dark:text-zinc-50 font-normal">
 
-              <li className=" mt-3 px-1 py-2">
+              <li className="mt-3">
                 <a className='a' href="">Início</a>
               </li>
 
-              <li className="mt-3 px-1 py-2">
-                <a className='a' href="">Sobre Mim</a>
+              <li className="mt-3">
+                <a className='a' href="">Quem Sou</a>
               </li>
 
-              <li className="mt-3 px-1 py-2">
+              <li className="mt-3">
                 <a className='a' href="">Habilidades</a>
               </li>
 
-              <li className="mt-3 px-1 py-2">
+              <li className="mt-3">
                 <a className='a' href="">Projetos</a>
               </li>
                 
-              <li className="mt-3 px-1 py-2">
+              <li className="mt-3">
                 <a className='a' href="">Contato</a>
               </li>
             </ul>
