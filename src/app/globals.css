@@ -54,7 +54,7 @@ body {
     height: 3px;
     background-color: #ed3654;
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     left: 0;
     transition: 0.2s ease-in-out;
   }
