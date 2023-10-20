@@ -17,8 +17,8 @@ const HardSkills = () =>{
 
 
   return(
-    <div className="layoutCenter mt-16 sm:mt-36">
-      <h2 className="fontSection mb-12">Habilidades</h2>
+    <div className="layoutCenter">
+      <h2 className="fontSection">Habilidades</h2>
 
       <div className="flex flex-col md:flex-row sm:bg-white dark:bg-zinc-850 rounded-sm min-w-0 max-w-screen-lg mx-auto p-2.5">
         <div className="hidden sm:block p-2 mb-1 md:mb-0 w-full md:w-1/2 h-36 md:h-full text-left">

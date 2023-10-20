@@ -24,11 +24,11 @@ body {
 
 @layer base{
   .layoutCenter{
-    @apply max-w-screen-2xl mx-auto px-3 xs:px-8 sm:px-20 text-center text-sm sm:text-base
+    @apply max-w-screen-2xl mx-auto mt-20 sm:mt-44 px-3 xs:px-8 sm:px-20 text-center text-sm sm:text-base
   }
   @layer base{
     .fontSection{
-      @apply text-2xl sm:text-3xl font-semibold
+      @apply mb-12 text-2xl sm:text-3xl font-semibold
     }
   }
   @layer base{

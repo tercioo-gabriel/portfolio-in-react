@@ -6,6 +6,7 @@ import ToggleButton from '@/components/Toggle/ToggleButton';
 import Image from 'next/image';
 import AboutMe from '@/components/Main/AboutMe/About';
 import HardSkills from '@/components/Main/Skills/Skills';
+import Projects from '@/components/Main/Projects/Projects';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Scroll />
       <AboutMe />
       <HardSkills />
+      <Projects />
     </div>
   )
 }
