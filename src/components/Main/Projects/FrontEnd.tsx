@@ -53,7 +53,7 @@ const Frontend = () => {
   ];
 
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-4'>
+    <div className='flex flex-row flex-wrap justify-center gap-6 md:gap-4'>
       {frontendData.map((data, index) => (
         <Constructor key={index} {...data} />
       ))}

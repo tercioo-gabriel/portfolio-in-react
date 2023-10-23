@@ -18,7 +18,7 @@ const Projects = () => {
   };
 
   return(
-    <div className="layoutCenter w-full flex flex-col">
+    <div className="layoutCenter flex flex-col">
 
       <h2 className="fontSection">Projetos</h2>
       <div className="flex mb-4 mx-auto items-center gap-4 uppercase">

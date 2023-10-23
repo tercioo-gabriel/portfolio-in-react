@@ -36,7 +36,7 @@ const config: Config = {
         'tecs': '4px 4px 4px rgba(89, 89, 89, 0.1)',
       },
       screens: {
-        'xs': '380px',
+        'xs': '400px',
       },
     },
   },
