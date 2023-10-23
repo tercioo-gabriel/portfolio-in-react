@@ -84,13 +84,13 @@ body {
     0% {
       transform: translateY(0);
     }
-    100% {
-      transform: translateY(260%);
+    60% {
+      transform: translateY(100%);
     }
   }
   .translate-y {
     animation-name: translate-y;
-    animation-duration: 2s;
+    animation-duration: 1.85s;
     animation-iteration-count: infinite;
   }
 }

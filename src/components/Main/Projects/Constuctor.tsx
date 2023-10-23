@@ -1,17 +1,18 @@
 import React from 'react';
 import { BiGitBranch, BiLink } from 'react-icons/bi';
 
-interface FrontendProps {
+interface ProjectProps {
   imgSrc: string;
   title: string;
+  linkGit?: string;
+  linkView?: string;
   description: string;
-  techIcons: { src: string; alt: string }[];
+  techIcons: { src: string; alt?: string }[];
 }
 
-const Constructor: React.FC<FrontendProps> = ({ imgSrc, title, description, techIcons }) => {
+const Constructor: React.FC<ProjectProps> = ({ imgSrc, title, linkGit, linkView, description, techIcons }) => {
   return (
-    <div className='flex h-96 justify-center'>
-      <div className='group relative overflow-hidden rounded-md xs:w-96 xs:h-52'>
+      <div className='group relative overflow-hidden rounded-md xs:w-96 xs:h-52 drop-shadow-md'>
         <img
           className="w-full xs:h-full group-hover:scale-105 xs:object-cover transition-all rounded-md"
           src={imgSrc}
@@ -25,8 +26,8 @@ const Constructor: React.FC<FrontendProps> = ({ imgSrc, title, description, tech
             <div className='flex flex-row justify-between'>
               <h4 className='text-redPink font-semibold p-1 text-base xs:text-lg tracking-wide'>{title}</h4>
               <div className='flex flex-row items-center justify-center gap-2 mr-1'>
-                <a href="" className='px-[18px] py-1 bg-redPink rounded-sm'><BiGitBranch className=" text-zinc-100 text-lg xs:text-xl"/></a>
-                <a href="" className='px-4 py-1 bg-redPink rounded-sm'><BiLink className=" text-zinc-100 text-lg xs:text-xl"/></a>
+                <a href={linkGit} target='_blank' className='px-[18px] py-1 bg-redPink rounded-sm'><BiGitBranch className=" text-zinc-100 text-lg xs:text-xl"/></a>
+                <a href={linkView} target='_blank' className='px-4 py-1 bg-redPink rounded-sm'><BiLink className=" text-zinc-100 text-lg xs:text-xl"/></a>
               </div>
             </div>
 
@@ -40,7 +41,6 @@ const Constructor: React.FC<FrontendProps> = ({ imgSrc, title, description, tech
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

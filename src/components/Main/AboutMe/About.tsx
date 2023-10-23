@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const AboutMe = ()=> {
  return(
-  <div className="flex flex-col items-center mt-10 mx-0 sm:mt-10 xs:mx-6 sm:mx-0">
+  <div className="flex flex-col items-center mx-0 xs:mx-6 sm:mx-0">
 
     <div className="flex flex-col p-4 w-full xs:max-w-screen-lg bg-zinc-50 dark:bg-zinc-850 rounded-none xs:rounded-md drop-shadow-lg mt-10 sm:mt-12 sm:w-4/5">
 
       <div className="flex flex-col lg:flex-row gap-3 lg:gap-6">
         <div className="flex justify-center">
           <div className="w-full h-64 sm:h-[410px] overflow-hidden rounded-sm flex items-center justify-center lg:w-96 lg:h-96 hover:xs:h-72 hover:sm:h-[410px] hover:lg:h-[384px] transition-all duration-300">
-            <Image className="rounded-sm"
+            <Image className="rounded-sm lg:border-l-4 border-redPink"
             src='/assets/images/me-1000px.png'
             alt='Foto minha'
             layout='responsive'
