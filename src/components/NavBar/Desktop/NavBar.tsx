@@ -5,15 +5,19 @@ import Image from 'next/image';
 const NavBar = () => {
   const [largura, setLargura] = useState(window.innerWidth);
   useEffect(() => {
-    const atualizarLargura = () => {
+    if (typeof window !== 'undefined') {
       setLargura(window.innerWidth);
-    };
 
-    window.addEventListener('resize', atualizarLargura);
+      const atualizarLargura = () => {
+        setLargura(window.innerWidth);
+      };
 
-    return () => {
-      window.removeEventListener('resize', atualizarLargura);
-    };
+      window.addEventListener('resize', atualizarLargura);
+
+      return () => {
+        window.removeEventListener('resize', atualizarLargura);
+      };
+    }
   }, []);
 
   const tamanhoDesejado = 830;
