@@ -23,13 +23,13 @@ const Projects = () => {
       <h2 className="fontSection">Projetos</h2>
       <div className="flex mb-4 mx-auto items-center gap-4 uppercase">
         <button 
-        className={`p-2 bg-zinc-600 text-zinc-100 uppercase tracking-wider font-semibold underline-offset-2 rounded-sm ${showFrontend ? '' : 'opacity-40'}`}
+        className={`p-2 bg-zinc-600 text-zinc-100 uppercase tracking-wider font-semibold underline-offset-2 rounded-sm ${showFrontend ? '' : 'opacity-30 drop-shadow-md'}`}
         onClick={toggleFrontend} >FrontEnd</button>
 
         <div className="w-0.5 h-8 bg-zinc-600 rounded-sm"></div>
 
         <button 
-        className={`p-2 bg-zinc-600 text-zinc-100 uppercase tracking-wider font-semibold underline-offset-2 rounded-sm ${showBackend ? '' : 'opacity-40'}`}
+        className={`p-2 bg-zinc-600 text-zinc-100 uppercase tracking-wider font-semibold underline-offset-2 rounded-sm ${showBackend ? '' : 'opacity-30 drop-shadow-md'}`}
         onClick={toggleBackend} >BackEnd</button>
       </div>
       {showFrontend && <Frontend />}

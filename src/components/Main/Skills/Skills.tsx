@@ -20,12 +20,12 @@ const HardSkills = () =>{
     <div className="layoutCenter">
       <h2 className="fontSection">Habilidades</h2>
 
-      <div className="flex flex-col md:flex-row sm:bg-white dark:bg-zinc-850 rounded-sm min-w-0 max-w-screen-lg mx-auto p-2.5">
-        <div className="hidden sm:block p-2 mb-1 md:mb-0 w-full md:w-1/2 h-36 md:h-full text-left">
+      <div className="flex flex-col md:flex-row sm:bg-white dark:sm:bg-zinc-850 rounded-sm min-w-0 max-w-screen-lg mx-auto p-2.5">
+        <div className="hidden sm:block p-2 mb-1 md:mb-0 w-full md:w-1/2 min-h-[160px] h-full md:h-full text-left">
           <p className="opacity-90">{boxTexto}</p>
         </div>
 
-        <div className="w-full md:w-1/2 gap-2 flex flex-wrap justify-center md:justify-end">
+        <div className="w-full md:w-1/2 xs:gap-2 flex flex-wrap justify-center md:justify-end">
 
           <Image className="imgTecs" 
           src='/assets/images/tecs/HTML.png' alt='Html5' width='90' height='90' 

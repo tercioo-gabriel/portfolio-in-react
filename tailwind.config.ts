@@ -31,6 +31,7 @@ const config: Config = {
         'linkedIn': '4px 4px 7px rgba(54, 194, 237, 0.6)',
         'gitHub': '4px 4px 7px rgba(38, 38, 38, 0.6)',
         'gitHub2': '4px 4px 7px rgba(89, 89, 89, 0.6)',
+        'titleProject': '1px 1px 0px rgba(200, 200, 200, 0.25)',
       },
       boxShadow: {
         'tecs': '4px 4px 4px rgba(89, 89, 89, 0.1)',

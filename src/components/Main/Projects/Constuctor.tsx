@@ -24,8 +24,9 @@ const Constructor: React.FC<ProjectProps> = ({ imgSrc, title, linkGit, linkView,
         <div className="flex flex-row">
           <div className="absolute inset-0 flex flex-col justify-between p-1 translate-y-[0%] xs:translate-y-[75%] group-hover:translate-y-0 transition-all">
             <div className='flex flex-row justify-between'>
-              <h4 className='text-redPink font-semibold p-1 text-base xs:text-lg tracking-wide'>{title}</h4>
-              <div className='flex flex-row items-center justify-center gap-0.5 xs:gap-2 mr-1'>
+
+              <h4 className='text-redPink font-semibold p-1 text-base xs:text-lg tracking-wide drop-shadow-titleProject'>{title}</h4>
+              <div className='flex flex-row items-center justify-center gap-1 xs:gap-2 mr-1'>
                 <a 
                 href={linkGit} 
                 target='_blank' 

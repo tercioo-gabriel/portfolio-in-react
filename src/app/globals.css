@@ -28,12 +28,12 @@ body {
   }
   @layer base{
     .fontSection{
-      @apply mb-12 text-2xl sm:text-3xl font-semibold
+      @apply mb-12 text-2xl xs:text-3xl sm:text-4xl font-semibold
     }
   }
   @layer base{
     .imgTecs{
-      @apply border-zinc-600 hover:bg-zinc-100 hover:dark:bg-zinc-800 rounded-sm shadow-tecs sm:saturate-0 hover:saturate-100 hover:scale-105 transition-all p-4 md:p-3.5 duration-300
+      @apply border-zinc-600 hover:bg-zinc-100 hover:dark:bg-zinc-800 rounded-sm shadow-tecs dark:shadow-md scale-75 xs:scale-100 sm:saturate-0 hover:saturate-100 hover:xs:scale-105 transition-all p-4 md:p-3.5 duration-300
     }
   }
 }
@@ -61,22 +61,6 @@ body {
   .a:hover{ color: #ed3654; }
   
   .a:hover::after{ width: 95%; }
-
-  .mob{
-    display: flex;
-    flex-direction: column;
-    padding: 12px 2px;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-  
-  .mob:hover{
-    color: #ed3654;
-  }
 
   .sun{ margin-right: 6px; }
 

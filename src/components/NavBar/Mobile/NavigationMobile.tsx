@@ -16,9 +16,9 @@ const NavigationMobile = ()=> {
 
   return(
     <>
-    <NavBarMobile className="mt-0" onMenuClick={handleMenuClick} />
+    <NavBarMobile onMenuClick={handleMenuClick} />
     {isOpen && (
-      <div className="fixed flex flex-col top-0 z-30 w-9/12 max-w-md h-full bg-zinc-50 dark:bg-zinc-700 duration-500">
+      <div className="fixed flex flex-col top-0 z-30 w-4/5 max-w-md h-full bg-zinc-50 dark:bg-zinc-700 duration-500">
 
         <IoMdClose 
           className="cursor-pointer" 
@@ -26,26 +26,26 @@ const NavigationMobile = ()=> {
           onClick={handleCloseClick} 
         />
 
-        <ul className="text-center font-light overflow-hidden">
+        <ul className="flex flex-col uppercase text-xl text-center font-normal gap-5 overflow-hidden">
 
-          <li className="mt-9">
-            <a className='mob' href="">Início</a>
+          <li className="mt-9 mb-3 hover:text-redPink">
+            <a href="">Início</a>
           </li>
 
-          <li className="my-3">
-            <a className='mob' href="">Quem Sou</a>
+          <li className="my-3 hover:text-redPink">
+            <a href="">Quem Sou</a>
           </li>
 
-          <li className="my-3">
-            <a className='mob' href="">Habilidades</a>
+          <li className="my-3 hover:text-redPink">
+            <a href="">Habilidades</a>
           </li>
 
-          <li className="my-3">
-            <a className='mob' href="">Projetos</a>
+          <li className="my-3 hover:text-redPink">
+            <a href="">Projetos</a>
           </li>
             
-          <li className="mb-9">
-            <a className='mob' href="">Contato</a>
+          <li className="mb-9 mt-3 hover:text-redPink">
+            <a href="">Contato</a>
           </li>
         </ul>
 
