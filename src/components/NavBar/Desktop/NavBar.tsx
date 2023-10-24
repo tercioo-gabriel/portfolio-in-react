@@ -1,19 +1,19 @@
-"use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const NavBar = () => {
-  const [largura, setLargura] = useState(window.innerWidth);
+  const [largura, setLargura] = useState(0);
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setLargura(window.innerWidth);
-
+      
       const atualizarLargura = () => {
         setLargura(window.innerWidth);
       };
-
+      
       window.addEventListener('resize', atualizarLargura);
-
+      
       return () => {
         window.removeEventListener('resize', atualizarLargura);
       };
@@ -63,7 +63,7 @@ const NavBar = () => {
       </>
       ) : (null)}
     </>
-  )
-}
+  );
+};
 
 export default NavBar;
