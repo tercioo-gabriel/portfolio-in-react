@@ -1,5 +1,5 @@
 import React from 'react';
-import { BiGitBranch, BiLink } from 'react-icons/bi';
+import { BiGitBranch, BiLink } from "react-icons/bi";
 
 interface ProjectProps {
   imgSrc: string;

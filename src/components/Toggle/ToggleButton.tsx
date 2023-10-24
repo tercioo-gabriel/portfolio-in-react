@@ -2,54 +2,46 @@
 import React, { useState, useEffect } from 'react';
 import { BiSolidSun, BiSolidMoon } from 'react-icons/bi';
 
-const ToggleButton = () =>{
+const ToggleButton = () => {
   const [theme, setTheme] = useState('light');
-  const element = document.documentElement
-  const options =[{
-    icon: 'sun',
-    text: 'light'
-  },
-  {
-    icon: 'moon',
-    text: 'dark'
-  }];
-
-  useEffect(()=> {
-    switch(theme){
-      case 'dark':
-        element.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-        break;
-      case 'light':
-        element.classList.remove('dark')
-        localStorage.setItem('theme', 'light');
-        break;
-      default:
-        localStorage.setItem('theme', 'light');
-        break;
+  
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
     }
-  },[theme]);
+  };
 
-  return(
-    <div className="fixed flex flex-col z-10 top-3 right-3 bg-zinc-700 dark:bg-zinc-200 rounded sm:top-5">
-      {
-        options?.map(opt=>(
-          <button
-           key={opt.text}
-           onClick={()=> setTheme(opt.text)}
-           className={`mx-0.5 my-1 sm:m-1 ${theme === opt.text ? 'text-redPink' : 'text-zinc-100'}`}>
-          {opt.icon === 'sun' ? 
-          <BiSolidSun 
-            name={opt.icon} 
-            style={{ color: theme !== opt.text ? 'dimgray' : '' }}
-            size={28} /> : 
-          <BiSolidMoon 
-            name={opt.icon}
-            size={28} />}    
-          </button>
-        ))
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const element = document.documentElement;
+
+      switch (theme) {
+        case 'dark':
+          element.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+          break;
+        case 'light':
+          element.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+          break;
+        default:
+          localStorage.setItem('theme', 'light');
+          break;
       }
-      
+    }
+  }, [theme]);
+
+  return (
+    <div className="fixed flex flex-col z-10 top-3 right-2 backdrop-blur-sm bg-white/30 dark:bg-zinc-900/30 drop-shadow-md rounded sm:top-6 sm:right-4">
+      <button onClick={toggleTheme}>
+        {theme === 'light' ? (
+          <BiSolidSun className="p-2 text-redPink" size={48} />
+        ) : (
+          <BiSolidMoon className="p-2 text-redPink" size={48} />
+        )}
+      </button>
     </div>
   )
 }
