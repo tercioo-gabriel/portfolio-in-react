@@ -30,17 +30,23 @@ const NavBarMobile = (props: any) => {
   };
 
   return (
-    <div className='fixed z-10 top-1.5 cursor-pointer'>
-      {largura < tamanhoDesejado && <Image 
-          className='fixed left-0 top-3 transition-all hover:scale-105 sm:w-16 sm:h-16'
-          src="/assets/images/dev_menu.svg"
-          alt="dev menu" 
-          width={54}
-          height={54}
-          onClick={handleMenuClick}
-      />}
-    </div>
-  )
-}
+    <>
+      {typeof window !== 'undefined' && (
+        <div className='fixed z-10 top-1.5 cursor-pointer'>
+          {largura < tamanhoDesejado && (
+            <Image
+              className='fixed left-0 top-3 transition-all hover:scale-105 sm:w-16 sm:h-16'
+              src="/assets/images/dev_menu.svg"
+              alt="dev menu"
+              width={54}
+              height={54}
+              onClick={handleMenuClick}
+            />
+          )}
+        </div>
+      )}
+    </>
+  );
+};
 
 export default NavBarMobile;
