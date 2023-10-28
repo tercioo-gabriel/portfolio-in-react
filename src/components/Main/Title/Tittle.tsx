@@ -16,17 +16,17 @@ const Title = () => {
 
         <div className='mt-6 sm:mt-12 flex gap-3 xs:gap-6 tracking-wide justify-center sm:justify-start'>
         
-          <a className='sm:w-32 px-4 py-2 text-center border-2 border-zinc-700 dark:border-zinc-100 transition-all hover:dark:border-cyan-500 hover:bg-cyan-500 hover:border-cyan-500 hover:drop-shadow-linkedIn' href='.'>LinkedIn</a>
+          <a className='sm:w-32 px-4 py-2 rounded-md text-center drop-shadow-buttonDrop bg-zinc-100 dark:bg-zinc-800 dark:drop-shadow-buttonDropDark transition-all hover:-translate-x-0.5 hover:-translate-y-0.5' href='.'>LinkedIn</a>
 
-          <a className='sm:w-32 px-4 py-2 text-center border-2 border-zinc-700 dark:border-zinc-100 transition-all hover:dark:border-neutral-700 hover:bg-neutral-700 hover:border-neutral-700 hover:text-zinc-200 hover:drop-shadow-gitHub hover:dark:drop-shadow-gitHub2' href='.'>GitHub</a>
+          <a className='sm:w-32 px-4 py-2 rounded-md text-center drop-shadow-buttonDrop bg-zinc-100 dark:bg-zinc-800 dark:drop-shadow-buttonDropDark transition-all hover:-translate-x-0.5 hover:-translate-y-0.5' href='.'>GitHub</a>
         </div>
       </div>
       
       <div>
-        <div className="-mr-8 xl:-mr-0 -mt-6 hidden lg:block">
+        <div className="-mr-8 xl:-mr-0 -mt-12 mb-4 hidden lg:block">
             <Image
-            className='scale-75 xl:scale-90 2xl:scale-100 drop-shadow-normalImg dark:drop-shadow-redPinkImg'
-            src="/assets/images/dev_computer.svg"
+            className='scale-75 drop-shadow-normalImg dark:drop-shadow-redPinkImg'
+            src="/assets/images/developer.png"
             alt="dev"
             width={512}
             height={512} />

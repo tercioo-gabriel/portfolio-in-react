@@ -1,93 +1,41 @@
-"use client"
-import React, { useState } from "react";
-import Image from "next/image";
+import React from 'react';
 
+interface HardSkillsProps {
+  darkMode: 'light' | 'dark';
+  toggleDarkMode: () => void;
+}
 
-const HardSkills = () =>{
-  const textoPadrao = "*Passe o cursor do mouse sob os cards*";
-
-  const [boxTexto, setBoxTexto] = useState<string>(textoPadrao);
-
-  const alterarTexto = (novoTexto: string) =>{
-    setBoxTexto(novoTexto);
-  };
-  const restaurarTextoPadrao = () => {
-    setBoxTexto(textoPadrao);
-  };
-
+const HardSkills: React.FC<HardSkillsProps> = ({ darkMode, toggleDarkMode }) =>{
 
   return(
     <div className="layoutCenter">
-      <h2 className="fontSection">Habilidades</h2>
+      <h2 className="text-lg uppercase font-medium tracking-widest">H a b i l i d a d e s</h2>
+      <h2 className="absolute opacity-10 left-1/2 -ml-32 -mt-8 text-3xl uppercase font-bold tracking-widest select-none hidden sm:block">Habilidades</h2>
 
-      <div className="flex flex-col md:flex-row sm:bg-white dark:sm:bg-zinc-850 rounded-sm min-w-0 max-w-screen-lg mx-auto p-2.5">
-        <div className="hidden sm:block p-2 mb-1 md:mb-0 w-full md:w-1/2 min-h-[160px] h-full md:h-full text-left">
-          <p className="opacity-90">{boxTexto}</p>
+      <div className='flex flex-col gap-12 mt-12 drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark'>
+        <div className="flex flex-row flex-wrap justify-center  gap-4 md:gap-10 lg:gap-12">
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/html-512.png" alt="html" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/css-512.png" alt="css" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/javascript-512.png" alt="js" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/typescript.svg" alt="ts" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/react-512.png" alt="react" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink dark:fill-zinc-100" src={`./assets/images/tecs/${darkMode === 'dark' ? 'nextjsDark' : 'nextjs'}-512.png`} alt="next" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/tailwind-512.png" alt="tailwind" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink dark:fill-zinc-100" src={`./assets/images/tecs/${darkMode === 'dark' ? 'styledDark' : 'styled'}-512.png`} alt="styled-components" />
         </div>
 
-        <div className="w-full md:w-1/2 xs:gap-2 flex flex-wrap justify-center md:justify-end">
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/HTML.png' alt='Html5' width='90' height='90' 
-          onMouseEnter={() =>
-          alterarTexto("HTML (Hypertext Markup Language) é a linguagem de marcação usada para criar e estruturar conteúdo em páginas da web")}
-          onMouseLeave={restaurarTextoPadrao}/>
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/CSS.png' alt='Css3' width='90' height='90'
-          onMouseEnter={() =>
-          alterarTexto("CSS (Cascading Style Sheets) é uma linguagem de estilo usada para controlar a aparência e o layout de elementos HTML. Ele permite definir cores, fontes, tamanhos, espaçamento e posicionamento de elementos, tornando possível personalizar o design de um site.")}
-          onMouseLeave={restaurarTextoPadrao}/>
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/JS.png' alt='Javascript' width='90' height='90' 
-          onMouseEnter={() =>
-          alterarTexto("JavaScript é uma linguagem de programação amplamente utilizada para tornar as páginas da web interativas e dinâmicas. Em resumo, o JavaScript é a linguagem que dá vida e interatividade às páginas da web.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/TYPESCRIPT2.png' alt='Typescript' width='90' height='90'
-          onMouseEnter={() =>
-          alterarTexto(`TypeScript é um ${`"superset"`} da linguagem JavaScript que adiciona tipagem estática ao código. Isso significa que o TypeScript permite declarar tipos de dados para variáveis, funções e objetos, tornando o código mais seguro e legível.`)}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/TAILWIND.png' alt='Tailwind' width='90' height='90'
-          onMouseEnter={() =>
-          alterarTexto("Tailwind CSS é um framework de design que oferece classes CSS utilitárias predefinidas para estilizar e estruturar rapidamente páginas da web, simplificando o desenvolvimento de interfaces modernas e altamente personalizáveis.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/STYLED-COMPONENTS.png' alt='styled-components' width='90' height='90'
-          onMouseEnter={() =>
-          alterarTexto("Styled-components é uma biblioteca para estilização de componentes em aplicações web, que permite escrever estilos usando JavaScript.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/REACT.png' alt='React' width='90' height='90'
-          onMouseEnter={() =>
-          alterarTexto("React é uma biblioteca de código aberto para a criação de interfaces de usuário em aplicações web. Permitindo a construção de interfaces interativas e reativas através da composição de componentes reutilizáveis.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/NEXT.png' alt='NextJs' width='90' height='90'
-          onMouseEnter={() =>
-          alterarTexto("Next.js é um framework de código aberto para o desenvolvimento de aplicações web, construído em cima do React. Projetado para oferecer desempenho, escalabilidade e facilidade de desenvolvimento.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/MYSQL.png' alt='MySQL' width='90' height='90' 
-          onMouseEnter={() =>
-          alterarTexto("MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) de código aberto amplamente utilizado. Confiável, escalável e perfomático, é uma das escolhas mais populares para uso em aplicativos da web e de negócios.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
-          <Image className="imgTecs" 
-          src='/assets/images/tecs/GIT.png' alt='Git' width='90' height='90' 
-          onMouseEnter={() =>
-          alterarTexto("Git é um sistema de controle de versão distribuído amplamente utilizado para rastrear e gerenciar mudanças no código-fonte de projetos de software. Usado em projetos de código aberto e em ambientes de desenvolvimento de software em todo o mundo.")}
-          onMouseLeave={restaurarTextoPadrao} />
-
+        <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-10 lg:gap-12">
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/nodejs-512.png" alt="html" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/python-512.png" alt="css" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/mysql-512.png" alt="mysql" />
         </div>
+
+        <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-10 lg:gap-12">
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/photoshop-512.png" alt="photoshop" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/illustrator-512.png" alt="illustrator" />
+          <img className="w-12 hover:scale-110 transition-all duration-300 sm:w-16 hover:drop-shadow-redPink" src="./assets/images/tecs/git-512.png" alt="git" />
+        </div>
+
       </div>
     </div>
   )

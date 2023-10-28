@@ -36,8 +36,8 @@ const NavBar = () => {
         </a>
 
         <div className="fixed z-[9999] mt-4 top-0 left-0 right-0 mx-auto max-w-screen-md w-9/12">
-          <nav className="backdrop-blur-sm bg-zinc-100/60 dark:bg-zinc-900/50 rounded-xl h-16 ">
-            <ul className="flex justify-around text-zinc-700 dark:text-zinc-50 font-normal">
+          <nav className="backdrop-blur-sm bg-zinc-100 drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark dark:bg-zinc-800 rounded-md h-16 ">
+            <ul className="flex justify-around uppercase text-zinc-700 dark:text-zinc-50 text-base font-normal">
 
               <li className="mt-5">
                 <a className='a' href="">Início</a>

@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import NavBar from '@/components/NavBar/Desktop/NavBar';
 import NavigationMobile from '@/components/NavBar/Mobile/NavigationMobile';
 import Scroll from '@/components/Scroll/Scroll';
@@ -8,18 +10,26 @@ import HardSkills from '@/components/Main/Skills/Skills';
 import Projects from '@/components/Main/Projects/Projects';
 import Contact from '@/components/Main/Contacts/Contacts';
 
-export default function Home() {
+ const Home: React.FC = () => {
+  const [darkMode, setDarkMode] = useState<'light' | 'dark'>('light');
+
+  const toggleDarkMode = () => {
+    setDarkMode(darkMode === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <div className='font-montserrat mb-80'>
       <NavBar />
       <NavigationMobile />
-      <ToggleButton />
+      <ToggleButton onClick={toggleDarkMode} toggleTheme={toggleDarkMode} themes={darkMode}/>
       <Title />
       <Scroll />
       <AboutMe />
-      <HardSkills />
+      <HardSkills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Projects />
       <Contact />
     </div>
   )
 }
+
+export default Home;
