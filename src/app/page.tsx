@@ -9,6 +9,7 @@ import AboutMe from '@/components/Main/AboutMe/About';
 import HardSkills from '@/components/Main/Skills/Skills';
 import Projects from '@/components/Main/Projects/Projects';
 import Contact from '@/components/Main/Contacts/Contacts';
+import Footer from '@/components/Main/Footer/Footer';
 
  const Home: React.FC = () => {
   const [darkMode, setDarkMode] = useState<'light' | 'dark'>('light');
@@ -18,7 +19,7 @@ import Contact from '@/components/Main/Contacts/Contacts';
   };
 
   return (
-    <div className='font-montserrat mb-80'>
+    <div className='font-montserrat'>
       <NavBar />
       <NavigationMobile />
       <ToggleButton onClick={toggleDarkMode} toggleTheme={toggleDarkMode} themes={darkMode}/>
@@ -28,6 +29,7 @@ import Contact from '@/components/Main/Contacts/Contacts';
       <HardSkills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }

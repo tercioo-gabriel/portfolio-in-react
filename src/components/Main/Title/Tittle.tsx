@@ -16,9 +16,9 @@ const Title = () => {
 
         <div className='mt-6 sm:mt-12 flex gap-3 xs:gap-6 tracking-wide justify-center sm:justify-start'>
         
-          <a className='sm:w-32 px-4 py-2 rounded-md text-center drop-shadow-buttonDrop bg-zinc-100 dark:bg-zinc-800 dark:drop-shadow-buttonDropDark transition-all hover:-translate-x-0.5 hover:-translate-y-0.5' href='.'>LinkedIn</a>
+          <a className='sm:w-32 px-4 py-2 rounded-md text-center drop-shadow-buttonDrop bg-zinc-100 dark:bg-zinc-800 dark:drop-shadow-buttonDropDark transition-all hover:-translate-x-0.5 hover:-translate-y-0.5' href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank" >LinkedIn</a>
 
-          <a className='sm:w-32 px-4 py-2 rounded-md text-center drop-shadow-buttonDrop bg-zinc-100 dark:bg-zinc-800 dark:drop-shadow-buttonDropDark transition-all hover:-translate-x-0.5 hover:-translate-y-0.5' href='.'>GitHub</a>
+          <a className='sm:w-32 px-4 py-2 rounded-md text-center drop-shadow-buttonDrop bg-zinc-100 dark:bg-zinc-800 dark:drop-shadow-buttonDropDark transition-all hover:-translate-x-0.5 hover:-translate-y-0.5' href="https://github.com/tercioo-gabriel" target="_blank">GitHub</a>
         </div>
       </div>
       

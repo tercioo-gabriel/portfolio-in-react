@@ -18,7 +18,7 @@ const NavigationMobile = ()=> {
     <>
     <NavBarMobile onMenuClick={handleMenuClick} />
     {isOpen && (
-      <div className="fixed flex flex-col top-0 z-30 w-4/5 max-w-md h-full bg-zinc-50 dark:bg-zinc-700 duration-500">
+      <div className="fixed flex flex-col top-0 z-[60] w-4/5 max-w-md h-full bg-zinc-50 dark:bg-zinc-700 duration-500">
 
         <IoMdClose 
           className="cursor-pointer" 
@@ -26,7 +26,7 @@ const NavigationMobile = ()=> {
           onClick={handleCloseClick} 
         />
 
-        <ul className="flex flex-col uppercase text-xl text-center font-normal gap-5 overflow-hidden">
+        <ul className="flex flex-col uppercase text-xl text-center font-semibold gap-5 overflow-hidden">
 
           <li className="mt-9 mb-3 hover:text-redPink">
             <a href="">Início</a>
