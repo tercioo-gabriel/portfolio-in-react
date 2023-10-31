@@ -58,7 +58,7 @@ body {
     left: 0;
     transition: 0.2s ease-in-out;
   }
-  .a:hover{ color: #ed3654; }
+  .a:hover{ color: #ed3654; text-shadow: 1px 1px 1px rgba(180, 180, 180, 0.8); }
   
   .a:hover::after{ width: 95%; }
 

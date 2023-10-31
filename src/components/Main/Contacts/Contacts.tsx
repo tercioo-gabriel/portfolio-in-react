@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return(
-    <div className="layoutCenter flex flex-col">
+    <div id='contact' className="layoutCenter flex flex-col mt-0 pt-20 sm:pt-44">
 
       <h2 className="text-lg uppercase font-medium tracking-widest">c o n t a t o</h2>
       <h2 className="absolute opacity-10 left-1/2 -ml-[88px] -mt-1 text-3xl uppercase font-bold tracking-widest select-none hidden sm:block">Contato</h2>
@@ -29,7 +29,7 @@ const Contact = () => {
           maxLength={320}
           placeholder="Mande sua mensagem aqui"></textarea>
 
-        <div className="flex flex-row gap-1 sm:gap-6">
+        <div className="flex flex-row gap-1 sm:gap-3">
           <button 
             className="rounded-sm px-3.5 py-1 font-semibold tracking-wider border-2 border-zinc-600 dark:border-zinc-300 hover:border-0 hover:bg-redPink hover:text-zinc-200 transition duration-200 sm:px-7 sm:py-1.5"
             type="submit"> Enviar

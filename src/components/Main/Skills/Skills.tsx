@@ -8,7 +8,7 @@ interface HardSkillsProps {
 const HardSkills: React.FC<HardSkillsProps> = ({ darkMode, toggleDarkMode }) =>{
 
   return(
-    <div className="layoutCenter">
+    <div id='skills' className="layoutCenter mt-0 pt-20 sm:pt-44">
       <h2 className="text-lg uppercase font-medium tracking-widest">H a b i l i d a d e s</h2>
       <h2 className="absolute opacity-10 left-1/2 -ml-32 -mt-8 text-3xl uppercase font-bold tracking-widest select-none hidden sm:block">Habilidades</h2>
 

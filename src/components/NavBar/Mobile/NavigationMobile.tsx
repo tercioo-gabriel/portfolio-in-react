@@ -1,6 +1,7 @@
 "use client"
 import { IoMdClose } from 'react-icons/io'
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import NavBarMobile from "./NavBarMobile";
 
 const NavigationMobile = ()=> {
@@ -29,23 +30,58 @@ const NavigationMobile = ()=> {
         <ul className="flex flex-col uppercase text-xl text-center font-semibold gap-5 overflow-hidden">
 
           <li className="mt-9 mb-3 hover:text-redPink">
-            <a href="">Início</a>
+            <Link 
+              className='a cursor-pointer'
+              activeClass="active" 
+              to="home" 
+              spy={true} 
+              smooth={true} 
+              offset={50} 
+              duration={500}>Início</Link>
           </li>
 
           <li className="my-3 hover:text-redPink">
-            <a href="">Quem Sou</a>
+            <Link 
+              className='a cursor-pointer'
+              activeClass="active" 
+              to="about-me" 
+              spy={true} 
+              smooth={true} 
+              offset={50} 
+              duration={500}>Quem sou</Link>
           </li>
 
           <li className="my-3 hover:text-redPink">
-            <a href="">Habilidades</a>
+            <Link 
+              className='a cursor-pointer'
+              activeClass="active" 
+              to="skills" 
+              spy={true} 
+              smooth={true} 
+              offset={50} 
+              duration={500}>habilidades</Link>
           </li>
 
           <li className="my-3 hover:text-redPink">
-            <a href="">Projetos</a>
+            <Link 
+              className='a cursor-pointer'
+              activeClass="active" 
+              to="projects" 
+              spy={true} 
+              smooth={true} 
+              offset={50} 
+              duration={500}>projetos</Link>
           </li>
             
           <li className="mb-9 mt-3 hover:text-redPink">
-            <a href="">Contato</a>
+            <Link 
+              className='a cursor-pointer'
+              activeClass="active" 
+              to="contact" 
+              spy={true} 
+              smooth={true} 
+              offset={50} 
+              duration={500}>Contato</Link>
           </li>
         </ul>
 

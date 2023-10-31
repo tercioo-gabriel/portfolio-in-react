@@ -18,7 +18,7 @@ const Projects = () => {
   };
 
   return(
-    <div className="layoutCenter flex flex-col">
+    <div id='projects' className="layoutCenter flex flex-col mt-0 pt-20 sm:pt-44">
 
       
       <h2 className="text-lg uppercase font-medium tracking-widest">p r o j e t o s</h2>

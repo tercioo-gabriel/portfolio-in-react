@@ -26,7 +26,7 @@ const Title = () => {
         <div className="-mr-8 xl:-mr-0 -mt-12 mb-4 hidden lg:block">
             <Image
             className='scale-75 drop-shadow-normalImg dark:drop-shadow-redPinkImg'
-            src="/assets/images/developer.png"
+            src="/assets/images/developer.gif"
             alt="dev"
             width={512}
             height={512} />
