@@ -21,6 +21,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-scroll": "^1.8.9",
     "autoprefixer": "latest",
     "css-loader": "^6.8.1",
     "eslint": "latest",
