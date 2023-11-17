@@ -4,7 +4,7 @@ const AboutMe = ()=> {
  return(
   <div id="about-me" className="flex flex-col items-center mx-0">
 
-    <div className="flex flex-col p-4 w-full xs:max-w-screen-lg bg-zinc-50 dark:bg-zinc-850 rounded-none xs:rounded-md drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark mt-10 sm:mt-12 sm:w-4/5">
+    <div className="flex flex-col p-4 w-full xs:max-w-screen-lg bg-zinc-50 dark:bg-zinc-850 rounded-none xs:rounded-md drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark mt-10 mb-16 sm:mt-12 sm:w-4/5">
 
       <div className="flex flex-col lg:flex-row gap-3 lg:gap-6">
         <div className="flex justify-center">
@@ -44,7 +44,7 @@ const AboutMe = ()=> {
       </div>
     </div>
 
-    
+    <h4 className="font-semibold uppercase tracking-wider opacity-90">Experiência</h4>
 
     <div className="flex flex-col mt-2 rounded-none md:flex-row sm:mt-4 sm:w-4/5 sm:rounded-md xs:max-w-screen-lg sm:gap-3">
       <div className="text-center w-full py-3 px-3 bg-zinc-50 dark:bg-zinc-850 text-sm drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark md:w-1/3 xs:text-left sm:rounded-md sm:text-base sm:py-2 sm:px-6 hover:scale-105 transition-all duration-300">
@@ -72,35 +72,6 @@ const AboutMe = ()=> {
         <p>Trabalho ocasionalmente como designer gráfico e editor de vídeos nas ferramentas Adobe (Photoshop e Illustrator). Faço posts de media social, cartões e logotipos.</p>
       </div>
     </div>
-
-    {/* <div className="flex flex-col mt-2 w-full rounded-none sm:mt-4 sm:w-4/5 sm:gap-2 sm:flex-row sm:justify-center xs:rounded-md xs:max-w-screen-lg">
-      <div className="flex flex-col text-center py-3 px-3 bg-zinc-50 dark:bg-zinc-850 text-sm drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark sm:rounded-md md:w-1/3 sm:text-base sm:py-2 sm:px-6 xs:text-left">
-
-        <h4 className="font-semibold text-redPink text-base sm:text-lg">Engenharia da Computação</h4>
-
-        <p className="font-medium mb-2">Faculdade Descomplica <span className="italic text-sm">(2022-2027)</span></p>
-
-        <div className="italic">
-          <p>- Programming Basics</p>
-          <p>- Arquitetura e Organização de Computadores</p>
-          <p>- DB Developer</p>
-        </div>
-      </div>
-
-      <div className="flex flex-col text-center py-3 px-3 bg-zinc-50 dark:bg-zinc-850 text-sm drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark sm:rounded-md md:w-1/3 sm:text-base sm:py-2 sm:px-6 xs:text-left">
-
-        <h4 className="font-semibold text-redPink text-base sm:text-lg">Certificações FullStack</h4>
-
-        <p className="font-medium mb-2">B7Web, DankiCode e Dev Samurai <span className="italic text-sm">(2022-2024)</span></p>
-
-        <div className="italic">
-          <p>- JavaScript e TypeScript</p>
-          <p>- ReactJs</p>
-          <p>- HTML5 e CSS3</p>
-          <p>- Banco de Dados</p>
-        </div>
-      </div>
-    </div> */}
   </div>
  )
 }
