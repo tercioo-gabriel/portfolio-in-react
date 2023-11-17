@@ -28,7 +28,7 @@ const NavBar = () => {
     {largura >= tamanhoDesejado ? (
       <>
         <div className="fixed z-[9999] top-0 left-0 right-0 mx-auto max-w-screen-md w-9/12">
-          <nav className="backdrop-blur-sm bg-zinc-100 drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark dark:bg-zinc-800 rounded-b-md h-20 ">
+          <nav className="backdrop-blur-sm bg-zinc-50/60 drop-shadow-buttonDrop dark:drop-shadow-buttonDropDark dark:bg-zinc-800/60 rounded-b-md h-20 ">
             <ul className="flex justify-around uppercase text-zinc-700 dark:text-zinc-50 text-base font-normal">
 
               <li className="mt-7">

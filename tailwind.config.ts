@@ -27,7 +27,7 @@ const config: Config = {
       },
       dropShadow: {
         'normalImg': '0 35px 35px rgba(256, 256, 256, 0.99)',
-        'redPinkImg': '3px 3px 100px rgba(237, 54, 84, 0.3)',
+        'redPinkImg': '3px 3px 100px rgba(245, 105, 166, 0.3)',
         'redPink': '3px 3px 5px rgba(237, 54, 84, 0.4)',
         'titleProject': '1px 1px 0px rgba(200, 200, 200, 0.25)',
         'buttonDrop': '1px 1px 4px rgba(200, 200, 200, 0.6)',
