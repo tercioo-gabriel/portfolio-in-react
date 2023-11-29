@@ -5,6 +5,17 @@ const Frontend = () => {
 
   const frontendData = [
     {
+      imgSrc: '/assets/images/projects/frontend-05.png',
+      title: 'green thumb',
+      linkGit: 'https://github.com/tercioo-gabriel/green-thumb',
+      linkView: 'https://lp-green-thumb.netlify.app',
+      description: 'Ecommerce de compra de plantas, com carrinho de compras, filtragens de plantas, etc. *EM ANDAMENTO',
+      lang1: 'react',
+      lang2: 'typescript',
+      lang3: 'tailwind',
+      lang4: '',
+    },
+    {
       imgSrc: '/assets/images/projects/frontend-03.png',
       title: 'shorts summary',
       linkGit: 'https://github.com/tercioo-gabriel/shorts-summary-front',
@@ -53,7 +64,7 @@ const Frontend = () => {
   ];
 
   return (
-    <div className='inline-grid grid-cols-1 lg:grid-cols-2 gap-14'>
+    <div className='inline-grid grid-cols-1 lg:grid-cols-2 gap-20'>
       {frontendData.map((data, index) => (
         <Constructor key={index} {...data} />
       ))}

@@ -30,17 +30,17 @@ const Constructor: React.FC<ProjectProps> = ({ imgSrc, title, linkGit, linkView,
             </p>
             <div className='absolute z-10 inset-0 bg-gradient-to-t from-gray-900/80 to-gray-700/30 transition-opacity opacity-0 group-hover:opacity-100 duration-150'></div>
           </div>
-          <div className='flex flex-col items-start mt-1 gap-2 xs:gap-0 xs:flex-row xs:justify-between'>
+          <div className='flex flex-row justify-between items-start mt-1 gap-2'>
             
-            <div className='flex flex-row gap-2 text-xs font-semibold uppercase sm:font-bold sm:text-sm sm:gap-4 '>
+            <div className='flex flex-row flex-wrap mt-2 gap-2 text-xs font-semibold uppercase xs:mt-3 sm:font-bold sm:text-sm sm:gap-4 '>
               <p>{lang1}</p>
               <p>{lang2}</p>
               <p>{lang3}</p>
               <p>{lang4}</p>
             </div>
             <div className='flex flex-row gap-2 xs:gap-3'>
-              <a className='px-4 py-0.5 text-xl bg-zinc-400 text-zinc-100 rounded-sm dark:bg-zinc-900 dark:text-zinc-300 hover:scale-105 hover:bg-redPink transition-all duration-150' href={linkView} target='_blank'><FiEye/></a>
-              <a className='px-4 py-0.5 text-xl bg-zinc-400 text-zinc-100 rounded-sm dark:bg-zinc-900 dark:text-zinc-300 hover:scale-105 hover:bg-redPink transition-all duration-150' href={linkGit} target='_blank'><BiGitBranch/></a>
+              <a className='mt-1 p-1.5 text-lg bg-white text-zinc-500 rounded-full drop-shadow-md dark:bg-zinc-900 dark:text-zinc-300 hover:scale-105 hover:bg-redPink hover:text-white dark:hover:bg-redPink transition-all duration-150 sm:p-2 sm:text-xl' href={linkView} target='_blank'><FiEye/></a>
+              <a className='mt-1 p-1.5 text-lg bg-white text-zinc-500 rounded-full drop-shadow-md dark:bg-zinc-900 dark:text-zinc-300 hover:scale-105 hover:bg-redPink hover:text-white dark:hover:bg-redPink transition-all duration-150 sm:p-2 sm:text-xl' href={linkGit} target='_blank'><BiGitBranch/></a>
             </div>
           </div>
         </div>

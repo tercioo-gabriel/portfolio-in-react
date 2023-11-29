@@ -38,7 +38,7 @@ const Backend = () =>{
   ];
 
   return(
-    <div className='inline-grid grid-cols-1 lg:grid-cols-2 gap-14'>
+    <div className='inline-grid grid-cols-1 lg:grid-cols-2 gap-20'>
       {backendData.map((data, index) => (
         <Constructor key={index} {...data} />
       ))}
